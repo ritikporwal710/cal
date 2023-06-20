@@ -68,11 +68,9 @@ for(let i=0;i<operator.length;i++)
                     hist = hist.substring(0,hist.length-1);
                 }
             }
-            if(outp != "")
+            if(outp != "" || hist!="")
             {
-                if(outp =="")
-                outp = "";
-                else
+                if(outp !="")
                 outp = reverseNumberFormat(outp);
                 
                 hist = hist + outp;
